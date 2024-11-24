@@ -1,0 +1,327 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#sidebar-wrapper {
+    transition: all 0.3s ease;
+    width: 250px;
+    background-color: #383F51;
+
+    z-index: 2;
+}
+
+#page-content-wrapper {
+    transition: all 0.3s ease;
+    flex-grow: 1;
+
+    background-color: #586e9a;
+    /* padding: 20px; */
+
+    z-index: 0;
+}
+
+#wrapper {
+    min-height: 100vh;
+}
+
+
+.toggled #sidebar-wrapper {
+    margin-left: -250px; /* Скрыть боковое меню */
+}
+
+.toggled #page-content-wrapper {
+    margin-left: 0; /* Смещаем контент на полную ширину */
+}
+
+.navbar {
+    background-color: #383F51;
+}
+
+.list-group-item {
+    background-color: transparent;
+    height: 50px;
+
+    border-color: #86839a;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #DDDBF1;
+}
+
+.bg-danger, .bg-secondary {
+    background-color: #e4d2c6 !important;
+}
+
+.badge {
+    color: #3C4F76 !important;
+}
+
+.nav-link {
+    color: #303645 !important;
+    font-weight: bolder;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.active {
+    background-color: #cbbcba !important;
+}
+
+.add-task {
+    background-color: #cbbcbc;
+
+    color: #303645;
+    font-weight: bolder;
+}
+
+.add-task:hover {
+    background-color: #e9d4d4;
+}
+
+
+.btn-back {
+    background-color: #cbbcbc;
+
+    color: #303645;
+    font-weight: bolder;
+}
+
+.btn-back:hover {
+    background-color: #e9d4d4;
+}
+
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1500px;
+    }
+}
+
+
+.table-light {
+    --bs-table-bg: #cbbcbc;
+    --bs-table-color: #303645;
+    --bs-table-border-color: transparent;
+}
+
+tr {
+    border-color: #cbbcbc;
+}
+
+.task-row {
+    color: #ffffff !important;
+}
+
+.empl-row {
+    color: #ffffff !important; 
+}
+
+.table-hover {
+    --bs-table-hover-bg: #cbbcbc;
+    --bs-table-hover-color: #252933;
+}
+
+
+.form-select {
+    background-color:  #cbbcbc !important;
+    border: 2px solid #383F51;
+}
+
+
+.create-d {
+    align-self: center;
+
+    background-color: #e4d2c6 !important;
+    color: #303645 !important;
+
+    border-color: #303645 !important;
+    border-width: 2px;
+
+    font-weight: bold;
+}
+
+.create-d:hover {
+    background-color: #f5dddd !important;
+}
+
+
+.list-group-item {
+    width: 70%;
+}
+
+.list-group {
+    align-items: center;
+}
+
+.list-group-item + .list-group-item {
+    border-top-width: 2px;
+  }
+
+.disc-item {
+    padding: 0;
+    height: 100%;
+
+    border-color: #cbbcba;
+    border-width: 2px;
+}
+
+.btn-delete-t {
+    background-color: #e4d2c6 !important;
+    color: #303645 !important;
+
+    border-color: #303645 !important;
+    border-width: 2px;
+
+    font-weight: bold;
+}
+
+.btn-delete-t:hover {
+    background-color: #f5dddd !important;
+}
+
+.btn-add-nt {
+    background-color: #e4d2c6 !important;
+    color: #303645 !important;
+
+    border-color: #303645 !important;
+    border-width: 2px;
+
+    font-weight: bold; 
+}
+
+.btn-add-nt:hover {
+    background-color: #f5dddd !important;
+}
+
+.note-text {
+    background-color: #cbbcbc !important;
+    border-color: #303645 !important;
+}
+
+
+.card-body {
+    background-color: #c6c2f0 !important;
+}
+
+.card-footer {
+    background-color: #e8e6ff;
+}
+
+.btn-edit-note {
+    background-color: #c6c2f0 !important;
+    border-color: #89a2d2 !important;
+}
+
+.btn-edit-note:hover {
+    background-color: #d5d1ff !important;
+}
+
+.btn-delete-note {
+    color: #303645 !important;
+
+    background-color: #c6c2f0 !important;
+    border-color: #89a2d2 !important;
+}
+
+.btn-delete-note:hover {
+    background-color: #d5d1ff !important;
+}
+
+.profile-card {
+    color: #383F51 !important;
+
+    background-color: #DDDBF1 !important;
+    border-color: #303645 !important;
+}
+
+.btn-update {
+    color: #303645 !important;
+
+    background-color: #e4e2eb !important;
+    border-color: #383F51 !important;
+}
+
+.btn-update:hover {
+    background-color: #D6D6DB !important;
+}
+
+
+.task-edit-s {
+    margin-left: 50px;
+}
+
+.disc-title {
+    color: #303645 !important;
+    text-align: center !important;
+}
+
+
+
+.chat {
+    width: 60%;
+}
+
+/* Общие стили для сообщений */
+.message {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    clear: both;
+}
+
+/* Сообщения текущего пользователя (слева) */
+.me {
+    background-color: #d1e7dd;
+    align-self: flex-start;
+    text-align: left;
+    float: right;
+}
+
+/* Сообщения других пользователей (справа) */
+.other {
+    background-color: #f8d7da;
+    align-self: flex-end;
+    text-align: left;
+    float: left;
+}
+
+/* Содержимое сообщения */
+.message-content {
+    margin-bottom: 5px;
+}
+
+/* Для скролла */
+#chat-box {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+
+    background-color: #6d87bb;
+
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px
+}
+
+/* Стили для кнопки удаления */
+form button {
+    margin-top: 5px;
+    align-self: flex-end;
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f8f9fa; /* Фоновый цвет */
+    font-family: Arial, sans-serif; /* Шрифт, соответствующий теме */
+}
+
+.card-header {
+    background-color: #007bff; /* Цвет заголовка карточки */
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Цвет кнопок */
+    border-color: #007bff;
+}
+
+.btn-outline-secondary, .btn-outline-danger {
+    border-radius: 4px;
+}
+
