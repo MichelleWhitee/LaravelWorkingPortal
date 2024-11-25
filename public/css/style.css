@@ -1,7 +1,32 @@
-html, body {
+
+@font-face {
+    font-family: "YSHeadline";  
+    src: url("/storage/fonts/YSText/YSMusic-HeadlineBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "YSTextRegular";  
+    src: url("/storage/fonts/YSText/YSText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "YSTextMedium";  
+    src: url("/storage/fonts/YSText/YSText-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "YSTextBold";  
+    src: url("/storage/fonts/YSText/YSText-Bold.ttf") format("truetype");
+}
+
+
+
+
+html, body { 
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "YSTextRegular";
 }
 
 

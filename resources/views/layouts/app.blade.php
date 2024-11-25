@@ -20,7 +20,7 @@
         @auth
             <!-- Sidebar -->
             <div id="sidebar-wrapper" class="shadow">
-                <div class="sidebar-heading fs-4 mt-3 mb-3" style="text-align: center; color: white;">Рабочий портал</div>
+                <div class="sidebar-heading fs-4 mt-3 mb-3" style="text-align: center; color: white; font-family: 'YSHeadline';">Рабочий портал</div>
                 <div class="list-group list-group-flush" style="margin-top: 29px">
                     <a href="{{ route('tasks.index') }}" class="list-group-item list-group-item-action">Задачи</a>
                     <a href="{{ route('discussions.index') }}" class="list-group-item list-group-item-action">Обсуждения</a>
