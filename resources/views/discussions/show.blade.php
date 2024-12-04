@@ -8,7 +8,7 @@
             <a href="{{ route('discussions.index') }}" class="shadow btn-back btn">Назад</a>
         </div>
         
-        <div id="chat-box" class="shadow mb-3 p-3" style="border: 2px solid #ccc; max-height: 600px; overflow-y: auto;">
+        <div id="chat-box" class="shadow mb-3 p-3" style="border: 2px solid #ccc; max-height: 600px; height: 600px; overflow-y: auto;">
             
             @foreach($discussion->messages as $message)
                 <div class="message {{ $message->user_id === auth()->id() ? 'me' : 'other' }}">
